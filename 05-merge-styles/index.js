@@ -19,7 +19,7 @@ function mergeStyles(source, destination) {
             if (error) {
               console.log('Error: ', error.message);
             }
-            bundleStyles += data;
+            bundleStyles += `${data}\n`;
             fs.writeFile(destination, bundleStyles, (error) => {
               if (error) {
                 console.log('Error: ', error.message);
